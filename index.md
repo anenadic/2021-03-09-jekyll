@@ -177,12 +177,10 @@ special instructions.
 {% endcomment %}
 <p id="accessibility">
   <strong>Accessibility:</strong>
-{% if online == "false" %}
   We are committed to providing a positive and accessible learning environment for all. Please
   notify the hosts in advance of the workshop if you require any accommodations or if there is
   anything we can do to make this workshop more accessible to you.
 </p>
-{% endif %}
 
 {% comment %}
 CONTACT EMAIL ADDRESS
