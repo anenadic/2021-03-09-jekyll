@@ -66,7 +66,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
+  registration box below, please check your adblocker settings or go directly to <a href="https://www.eventbrite.co.uk/preview?eid=114418532912/" target="_blank">EventBrite to register</a>.</strong>
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
