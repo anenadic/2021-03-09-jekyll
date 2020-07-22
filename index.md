@@ -327,7 +327,7 @@ please preview your site before committing, and make sure to run
 {% endcomment %}
 
 <h2 id="setup">Setup</h2>
-
+<h3>Installation instructions</h3>
 <p>
   To participate in this workshop,
   you will need to install <a href="https://datacarpentry.org/ecology-workshop/setup-r-workshop.html">
