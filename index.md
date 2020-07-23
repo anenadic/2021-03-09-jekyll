@@ -301,6 +301,8 @@ the div's with class="row" to balance the multi-column layout.
 This is one of the places where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
+{% endcomment %}
+{% comment %}
 <h2 id="syllabus">Syllabus</h2>
 
 {% if site.carpentry == "swc" %}
@@ -310,9 +312,9 @@ please preview your site before committing, and make sure to run
 {% elsif site.carpentry == "lc" %}
 {% include lc/syllabus.html %}
 {% endif %}
-{% endcomment %}
 
 <hr/>
+{% endcomment %}
 
 {% comment %}
 SETUP
