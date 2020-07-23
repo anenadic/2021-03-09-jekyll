@@ -310,9 +310,9 @@ please preview your site before committing, and make sure to run
 {% elsif site.carpentry == "lc" %}
 {% include lc/syllabus.html %}
 {% endif %}
+{% endcomment %}
 
 <hr/>
-{% endcomment %}
 
 {% comment %}
 SETUP
