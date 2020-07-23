@@ -333,6 +333,15 @@ please preview your site before committing, and make sure to run
   you will need to install <a href="https://datacarpentry.org/ecology-workshop/setup-r-workshop.html">
     the software described at the lesson material setup pages</a>.
 </p>
+
+{% if site.carpentry == "swc" %}
+{% include swc/setup.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/setup.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/setup.html %}
+{% endif %}
+
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
