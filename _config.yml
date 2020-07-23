@@ -14,7 +14,7 @@
 #  https://github.com/carpentries/workshop-template
 # and for instructor training events you should use:
 #  https://github.com/carpentries/training-template
-carpentry: "dc"
+carpentry: "swc"
 
 # This option is currently only needed for
 # Data Carpentry and Software Carpentry workshops.
@@ -27,7 +27,7 @@ carpentry: "dc"
 # dc-geospatial: for Data Carpentry Geospatial
 # swc-inflammation: for Software Carpentry based on the inflammation dataset
 # swc-gapminder: for Software Carpentry based on the Gapminder dataset
-curriculum: "dc-ecology"
+curriculum: ""
 
 # If there is both an R and python official version of a curriculum
 # (as listed on https://software-carpentry.org/lessons/ and
@@ -35,7 +35,7 @@ curriculum: "dc-ecology"
 # value of the variable below ("flavor") to get the schedule and installation
 # instructions updated accordingly (valid values are 'r' or 'python').
 # Note: this is only for Data Carpentry and SWC at this time.
-flavor: "r"
+flavor: "python"
 
 # Overall title for the Workshop.
 # This variable is used to (optionally) add a title in the "jumbotron"
@@ -56,7 +56,7 @@ kind: "workshop"
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 # Please don't change it: <USERNAME>/<PROJECT> is correct.
-repository: softwaresaved/2020-10-13-ssi-online
+repository: softwaresaved/2020-11-10-ssi-online
 
 # Email address, no mailto:
 # (Don't change this -- the contact address for your workshop will be set
@@ -78,7 +78,7 @@ swc_site: "https://software-carpentry.org"
 template_repo: "https://github.com/carpentries/styles"
 training_site: "https://carpentries.github.io/instructor-training"
 workshop_repo: "https://github.com/carpentries/workshop-template"
-workshop_site: "https://softwaresaved.github.io/2020-10-13-ssi-online/"
+workshop_site: "https://softwaresaved.github.io/2020-11-10-ssi-online/"
 
 # Surveys.
 pre_survey: "https://carpentries.typeform.com/to/wi32rS?slug="
