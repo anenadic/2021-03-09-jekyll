@@ -330,8 +330,7 @@ please preview your site before committing, and make sure to run
 <h3>Installation instructions</h3>
 <p>
   To participate in this workshop,
-  you will need to install <a href="https://datacarpentry.org/ecology-workshop/setup-r-workshop.html">
-    the software described at the lesson material setup pages</a>.
+  you will need to install <strong>all of the software described below before coming to the workshop</strong>. We will run a pre-workshop installation session to help everyone set up and make sure they have the required software installed.
 </p>
 
 {% if site.carpentry == "swc" %}
