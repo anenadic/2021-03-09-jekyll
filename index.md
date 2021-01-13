@@ -17,7 +17,7 @@ instructor: ["Sarah Stevens", "Renato Alves"] # boxed, comma-separated list of i
 helper: ["Aleksandra Nenadic", "Toby Hodges"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["a.nenadic@manchester.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  "https://pad.carpentries.org/2020-11-10-ssi-online" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite: ""           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: "136621784435"           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -63,7 +63,6 @@ This block includes the Eventbrite registration widget if
 'eventbrite' has been set in the header.  You can delete it if you
 are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings or go directly to <a href="https://www.eventbrite.co.uk/preview?eid=114418532912/" target="_blank">EventBrite to register</a>.</strong>
@@ -75,6 +74,7 @@ displayed if the 'eventbrite' field in the header is not set.
   scrolling="auto">
 </iframe>
 {% endif %}
+{% endcomment %}
 
 
 <h2 id="general">General Information</h2>
@@ -85,6 +85,7 @@ INTRODUCTION
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
+
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
@@ -92,8 +93,10 @@ the pitch.
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
 {% endif %}
+<strong>Registration:</strong> Free via <a href="https://www.eventbrite.co.uk/e/{{page.eventbrite}}" target="_blank">EventBrite</a>.
 
 {% comment %}
+
 AUDIENCE
 
 Explain who your audience is.  (In particular, tell readers if the
