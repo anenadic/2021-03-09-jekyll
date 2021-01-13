@@ -13,8 +13,8 @@ humandate: "9 - 11 March 2021"    # human-readable dates for the workshop (e.g.,
 humantime: "13:00 - 16:00 UTC"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-03-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-03-11        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["TBD"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Aleksandra Nenadic"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Sarah Stevens", "Renato Alves"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Aleksandra Nenadic", "Toby Hodges"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["a.nenadic@manchester.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  "https://pad.carpentries.org/2020-11-10-ssi-online" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite: ""           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -154,7 +154,7 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  {{page.humandate}}.
+  {{page.humandate}}, {{page.humantime}}.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
@@ -276,8 +276,8 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
-Training materials: [https://carpentries-incubator.github.io/](https://carpentries-incubator.github.io/).
-Schedule times are approximate and are being evaluated - we will do our best to keep to them.
+Schedule times are approximate and are being evaluated - we will do our best to keep to them.<br/>
+Training materials: [https://carpentries-incubator.github.io/jekyll-pages-novice](https://carpentries-incubator.github.io/jekyll-pages-novice).
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -289,7 +289,7 @@ Schedule times are approximate and are being evaluated - we will do our best to 
 {% endif %}
 
 {% comment %}
-SYLLABUS
+SYLLABUS                         sc
 
 Show what topics will be covered.
 
