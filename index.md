@@ -276,7 +276,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
-Training materials: [https://github.com/carpentries-incubator/jekyll-pages-novice](https://github.com/carpentries-incubator/jekyll-pages-novice).
+Training materials: [https://carpentries-incubator.github.io/](https://carpentries-incubator.github.io/).
 Schedule times are approximate and are being evaluated - we will do our best to keep to them.
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
