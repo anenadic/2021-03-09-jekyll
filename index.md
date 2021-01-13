@@ -9,15 +9,15 @@ country: "gb"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "01 - 05 March 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 - 13:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2021-03-01      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2021-03-105        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Kamilla Kopec-Harding", "Antonia Mey", "Sam Mangham"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+humandate: "09 - 11 March 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "13:00 - 16:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2021-03-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-03-11        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["TBD"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Aleksandra Nenadic"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["a.nenadic@manchester.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  "https://pad.carpentries.org/2020-11-10-ssi-online" # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite: "132515556597"           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: ""           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -166,7 +166,8 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong> Participants must have a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) and an account on 
+  <a href="https://github.com">GitHub</a>.
 </p>
 
 {% comment %}
@@ -207,11 +208,13 @@ Display the contact email address set in the configuration file.
   for more information.
 </p>
 
+{% comment %}
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
+{% endcomment %}
 
 <hr/>
 
@@ -244,7 +247,6 @@ e.g., '2015-06-10-esu'.
 
 Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
-{% endcomment %}
 {% if page.collaborative_notes %}
 <h2 id="collaborative_notes">Collaborative Notes</h2>
 
@@ -253,17 +255,17 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 </p>
 <hr/>
 {% endif %}
+{% endcomment %}
 
 
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop survey</a></p>
-
 <hr/>
+ {% endcomment %}
 
 
 {% comment %}
@@ -274,16 +276,17 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
-
+Training materials: [https://github.com/carpentries-incubator/jekyll-pages-novice](https://github.com/carpentries-incubator/jekyll-pages-novice).
+Schedule times are approximate - we will do our best to keep to it.
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
+{% elsif site.carpentry == "incubator" %}
+{% include incubator/schedule.html %}
 {% endif %}
-
-<hr/>
 
 {% comment %}
 SYLLABUS
@@ -326,7 +329,6 @@ and end easier to find.
 This is the other place where people frequently make mistakes, so
 please preview your site before committing, and make sure to run
 'tools/check' as well.
-{% endcomment %}
 
 <h2 id="setup">Setup</h2>
 <h3>Installation instructions</h3>
@@ -348,6 +350,7 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+{% endcomment %}
 
 {% comment %}
 For online workshops, the section below provides:
@@ -358,10 +361,10 @@ For online workshops, the section below provides:
 If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
 to include the relevant installation instrucctions.
-{% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 These are the installation instructions for the tools used
