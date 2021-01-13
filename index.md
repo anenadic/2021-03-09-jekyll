@@ -277,7 +277,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 Training materials: [https://github.com/carpentries-incubator/jekyll-pages-novice](https://github.com/carpentries-incubator/jekyll-pages-novice).
-Schedule times are approximate - we will do our best to keep to it.
+Schedule times are approximate and are being evaluated - we will do our best to keep to them.
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
