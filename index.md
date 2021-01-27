@@ -79,7 +79,7 @@ displayed if the 'eventbrite' field in the header is not set.
 
 <h2 id="general">General Information</h2>
 <p id="intro" class="jumbotron" style="background-color: #d9edf7;">
-This workshop pilots new training material <a href="https://carpentries-incubator.github.io/jekyll-pages-novice">"Building Websites with Jekyll and GitHub"</a> currently under development in <a href="https://github.com/carpentries-incubator">Carpentries Incubator</a>. The aim of the workshop is to test-drive the new material and exercises, get a clearer picture on the amount of time needed to deliver the material, gather any feedback from participants and prepare it for the delivery by other instructors.
+This workshop pilots the new training material <a href="https://carpentries-incubator.github.io/jekyll-pages-novice">"Building Websites with Jekyll and GitHub"</a> currently under development in the <a href="https://github.com/carpentries-incubator">Carpentries Incubator</a>. The aim of the workshop is to test-drive the new material and exercises, get a clearer picture on the amount of time needed to deliver the material, gather any feedback from participants and prepare it for the delivery by other instructors.
 </p>
 
 {% comment %}
