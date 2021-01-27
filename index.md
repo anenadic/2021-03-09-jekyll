@@ -78,8 +78,8 @@ displayed if the 'eventbrite' field in the header is not set.
 
 
 <h2 id="general">General Information</h2>
-<p id="intro"><strong>
-This workshop pilots the newly developed Carpentries training material ["Building Websites with Jekyll and GitHub"](https://carpentries-incubator.github.io/jekyll-pages-novice). The aim of the workshop is to test-drive the new material and exercises, get a clearer picture on the amount of time needed to deliver the material, gather any feedback from participants and prepare it for the delivery by other instructors.</strong>
+<p id="intro"><em>
+This workshop pilots the newly developed Carpentries training material <a href="https://carpentries-incubator.github.io/jekyll-pages-novice>"Building Websites with Jekyll and GitHub"</a>. The aim of the workshop is to test-drive the new material and exercises, get a clearer picture on the amount of time needed to deliver the material, gather any feedback from participants and prepare it for the delivery by other instructors.</em>
 </p>
 
 {% comment %}
