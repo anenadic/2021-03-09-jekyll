@@ -275,13 +275,13 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 
 
 {% comment %}
-SCHEDULE, MATERIALS & NOTES
+SCHEDULE
 
 Show the workshop's schedule.  Edit the items and times in the table
 to match your plans.  You may also want to change 'Day 1' and 'Day
 2' to be actual dates or days of the week.
 {% endcomment %}
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Schedule, Materials & Notes</h2>
 Schedule times are approximate and are being evaluated - we will do our best to keep to them.<br/>
 
 Training materials: [https://carpentries-incubator.github.io/jekyll-pages-novice](https://carpentries-incubator.github.io/jekyll-pages-novice).
