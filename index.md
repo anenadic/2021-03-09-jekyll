@@ -283,7 +283,10 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 Schedule times are approximate and are being evaluated - we will do our best to keep to them.<br/>
+
 Training materials: [https://carpentries-incubator.github.io/jekyll-pages-novice](https://carpentries-incubator.github.io/jekyll-pages-novice).
+
+Shared document with notes for the participants of the workhop: [https://codimd.carpentries.org/2021-03-09-jekyll?both](https://codimd.carpentries.org/2021-03-09-jekyll?both).
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
